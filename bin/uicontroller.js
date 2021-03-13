@@ -37,15 +37,11 @@ class DummyPage {
     this.controller = pageController;
   }
   display() {
-    console.log(window.matchMedia);
-    console.log(window.matchMedia('(max-device-width: 640px)').matches);
     if (window.matchMedia && window.matchMedia('(max-device-width: 640px)').matches) {
       this.controller.setPage(new SorryPage(this.parent, this.controller));
     } else {
       this.controller.setPage(new StartPage(this.parent, this.controller));
     }
-    // this.controller.setPage(new EndPage(this.parent, this.controller));
-    // this.controller.setPage(new SorryPage(this.parent, this.controller));
   }
 }
 
