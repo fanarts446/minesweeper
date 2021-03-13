@@ -1,0 +1,262 @@
+/* 
+ * Global Style
+ */
+
+html {
+  /* px means 'pixels': the base font size is now 10 pixels high  */
+  /* font-size: 40px; */
+  /* this should be the rest of the output you got from Google fonts */
+  font-family: 'DotGothic16', sans-serif;
+  color: #EEEEE7;
+  letter-spacing: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+*/
+.game-page {
+/*
+  vertical-align: middle;
+  text-align: center;
+  margin: auto 0;
+  padding: 0px;
+  display: inline-block;
+*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 30px 0;
+  width: 736px;
+  height: 530px;
+  background-color: #000007;
+}
+
+.game-page .game-page-element {
+  display: block;
+  color: #EEEEE7;
+}
+
+.game-page-element h1,h2,h3,h4,h5{
+  /* display: inline-block;*/
+  text-align: center;
+  color: #EEEEE7;
+  margin: 30px auto 22px;
+}
+
+.game-page-element h1{
+/*  font-size: 58px;*/
+}
+
+.game-page-element p{
+  text-align: center;
+  color: #EEEEE7;
+}
+
+.virtual-box {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #000007;
+  color: #EEEEE7;
+}
+
+.credits {
+  display: inline-block;
+  font-size:8px;
+  /*margin: 150px 0 0 0;*/
+  /*position absolute;*/
+  /*bottom: 560px;*/
+}
+
+
+.flash-element {
+  animation: flash 2s linear infinite;
+}
+
+@keyframes flash {
+  0%,100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+}
+
+
+input[type=radio] {
+  display: none;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+
+/* 
+ * Language
+ */
+.language-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.language-radio {
+  display: inline-block;
+}
+
+.language-label {
+  margin: 5px;
+  padding: 2px;
+  border: 1px solid #EEEEE7;
+  background-color: #000007;
+  color: #EEEEEE7;
+}
+
+/* input[type=radio] {*/
+.language-radio input[type=radio]:checked + label {
+  background-color: #EEEEE7;
+  color: #000007;
+}
+
+
+
+
+
+/* 
+ * Difiicult
+ */
+.difficult-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+}
+
+.difficult-radio {
+  display: inline-block;
+}
+
+.difficult-label {
+  margin: 5px;
+  padding: 2px;
+  border: 1px solid #EEEEE7;
+  background-color: #000007;
+  color: #EEEEEE7;
+  transition: .4s;
+}
+
+.difficult-label:hover {
+  background-color: #505057;
+  color: #EEEEE7;
+}
+
+/* input[type=radio] {*/
+.difficult-radio input[type=radio]:checked + label {
+  background-color: #EEEEE7;
+  color: #000007;
+/*
+  background-color: #202020;
+  color: #EEEEE7;
+*/
+  transition: .2s;
+}
+
+.difficult-label p{
+  margin: 0;
+}
+
+.invisible {
+  display: none;
+  /*visibility: hidden;*/
+}
+
+.dispose {
+  display: none;
+}
+
+
+/* 
+ * CHECK
+ */
+.declare-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.declare-check {
+  display: inline-block;
+}
+
+.declare-label {
+  margin: 0 5px;
+  padding: 2px;
+  border: 1px solid #EEEEE7;
+  background-color: #000007;
+  color: #EEEEEE7;
+  transition: .4s;
+}
+/*
+.declare-label:hover {
+  background-color: #EEEEE7;
+  color: #000007;
+}
+*/
+
+.declare-check input[type=radio]:checked + label {
+  background-color: #EEEEE7;
+  color: #000007;
+/*
+  background-color: #202020;
+  color: #EEEEE7;
+*/
+  transition: .2s;
+}
+
+.declare-label:hover {
+  background-color: #505057;
+  color: #EEEEE7;
+}
+
+
+
+
+
+
+/*
+ * START BUTTON
+ * https://saruwakakun.com/html-css/reference/buttons#section2
+ */
+.start-button {
+  display: inline-block;
+  padding: 0.3em 1em;
+  /* text-decoration: none;*/
+  text-align: center;
+  color: #EEEEE7;
+  border: solid 2px #EEEEE7;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+.start-button:hover {
+  background-color: #EEEEE7;
+  color: #000007;
+}

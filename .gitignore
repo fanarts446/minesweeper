@@ -1,0 +1,7 @@
+# .gitignore
+# utf8
+
+# exclusion files
+*~
+
+# EOF
